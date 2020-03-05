@@ -1,5 +1,5 @@
 ## Description
-Project of a budget[1] custom NAS focused on data integrity[2] (ZFS filesystem + ECC RAM). \
+Project of a budget[1] custom NAS focused on data integrity[2] (ZFS filesystem + ECC RAM).  
 It has been made on Februrary 2020, so considerations on hardware may no longer be valid in future
 
 ### Components
