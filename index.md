@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+## Description
+Project of a budget[1] custom NAS focused on data integrity[2] (ZFS filesystem + ECC RAM).
+It has been made on Februrary 2020, so considerations on hardware may no longer be valid in future
 
-You can use the [editor on GitHub](https://github.com/Germano0/reliable-data-storage-project/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Components
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+CASE: Fractal Design Define R5 + 3x Noctua NF-A14 ULN
+PSU: Seasonic PRIME GX-650
+CPU: AMD Ryzen 5 3600 + Noctua NH-D15
+RAM: 2x16 GB Kingston 2666 ECC [KSM26ED8/16ME]
+VGA: Radeon R5 230 passiva
+MOBO: ASRock X470 Taichi Ultimate
+STORAGE: RAID-Z3 + SSD for operating system
+OS: CentOS 8 + ZFS On Linux
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Notes
+- the CPU is the cheapest 3rd gen Ryzen (Zen 2 arch) with certified ECC RAM support. APUs with integrated GPU are not certified. It is also the cheapest to support all PCI Express slots;
+- I did not choose a ITX mobo because I needed at least 2 PCIExpress 8x: one for additional LSI HBA and another for further 10Gbit/s NIC. Luckly this mobo has also an integrated 10Gbit/s NIC;
+- I did not choose AMD X570 chipset because it isn't fanless;
+- the system is not audible during daylight hours and idle power consumption is <50Watt.
+- The case IMHO is the best for having 8x 3.5" + 2x 2.5" + 2x 5.25" slots;
+- the PSU is the cheapest Seasonic with 150000 hours MTBF
+- software stacks for sharing data are SSHFS and syncthing
+- mounting a remote folder with following SSHFS flags improves network throughput, even saturating Gigabit/s Ethernet connection during file transfers `$ sshfs -o cache=yes -o kernel_cache -o compression=no user@ip_address:/zpool/dataset /foo/bar`
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Germano0/reliable-data-storage-project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[1]: budget because it uses a consumer x86 CPU rather than a x96 server CPU for having ECC RAM support  
+[2]: https://en.wikipedia.org/wiki/Data_degradation
