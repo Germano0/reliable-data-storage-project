@@ -5,14 +5,14 @@ It has been made on Februrary 2020, so considerations on hardware may no longer 
 ### Components
 
 ```
-CASE: Fractal Design Define R5 + 3x Noctua NF-A14 ULN
-PSU: Seasonic PRIME GX-650
 CPU: AMD Ryzen 5 3600 + Noctua NH-D15
 RAM: 2x16 GB Kingston 2666 ECC [KSM26ED8/16ME]
-VGA: Radeon R5 230 passiva
 MOBO: ASRock X470 Taichi Ultimate
+VGA: Radeon R5 230 passive
 STORAGE: RAID-Z3 + SSD for operating system
 OS: CentOS 8 + ZFS On Linux
+CASE: Fractal Design Define R5 + 3x Noctua NF-A14 ULN
+PSU: Seasonic PRIME GX-650
 ```
 
 ### Notes
