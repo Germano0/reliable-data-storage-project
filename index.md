@@ -24,7 +24,8 @@ PSU: Seasonic PRIME GX-650
 - the PSU is the cheapest Seasonic with 150000 hours MTBF
 - software stacks for sharing data are SSHFS and syncthing
 - mounting a remote folder with following SSHFS flags improves network throughput, even saturating Gigabit/s Ethernet connection during file transfers `$ sshfs -o cache=yes -o kernel_cache -o compression=no user@ip_address:/zpool/dataset /foo/bar`
+- total cost 1067,37 € disks excluded
 
 
-[1]: budget because it uses a consumer x86 CPU rather than a x96 server CPU for having ECC RAM support  
+[1]: budget because it uses a consumer x86 CPU rather than a x86 server CPU in order to have ECC RAM support  
 [2]: https://en.wikipedia.org/wiki/Data_degradation
