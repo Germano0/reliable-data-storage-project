@@ -27,5 +27,5 @@ PSU: Seasonic PRIME GX-650
 - total cost 1067 € disks excluded
 
 
-[1]: budget because it uses a consumer x86 CPU rather than a x86 server CPU in order to have ECC RAM support  
+[1]: budget because it has ECC RAM support despite using a consumer x86 CPU rather than a x86 server CPU
 [2]: https://en.wikipedia.org/wiki/Data_degradation
