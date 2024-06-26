@@ -10,7 +10,7 @@ RAM: 2x16 GB Kingston 2666 ECC [KSM26ED8/16ME]
 MOBO: ASRock X470 Taichi Ultimate
 VGA: Radeon R5 230 passive
 STORAGE: RAID-Z3 + SSD for operating system
-OS: CentOS 8 + ZFS On Linux
+OS: RHEL 9 + ZFS On Linux
 CASE: Fractal Design Define R5 + 3x Noctua NF-A14 ULN
 PSU: Seasonic PRIME GX-650
 ```
